@@ -12,6 +12,6 @@ jobs:
     steps:
       - name: Enviar mensagem pro Discord
         run: |
-          curl -H "Content-Type: application/json" \
+          curl -H "Content-Type: application/json" \git add .
           -d "{\"content\":\"🚀 Commit realizado no repositório ${{ github.repository }} por ${{ github.actor }}\"}" \
           ${{ secrets.DISCORD_WEBHOOK }}P
